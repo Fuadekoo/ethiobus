@@ -97,4 +97,24 @@ router.delete("/delete-bus/:id", authMiddleware, async(req, res) => {
     }
 });
 
+// get bus by id
+// note in this bellow post and get method authMiddleware is used for auth user(only
+router.post("/get-bus-by-id/",authMiddleware,async(req,res)=>{
+    try {
+        //Fetch all buses
+        const bus = await BusModel.findById(req.body._id);
+        //Send success response
+        res.status(200).send({
+            success:true,
+            message:"bus fetched successfully",
+            bus:bus,
+        });
+    } catch (error) {
+        //send error response
+        res.status(500).send({
+            success:false,
+            message:error.message,
+        });
+    }
+});
 module.exports = router;

@@ -1,0 +1,44 @@
+.primary-btn{
+    background-color: #086708 !important;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+}
+.bus-container{
+    width: 300 px !important;
+    border: 2px solid gray;
+    padding: 10px;
+}
+.seat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+.h-half-screen {
+    height: 50vh;
+    overflow-y: auto;
+}
+.selected-seat{
+    background-color: #086708;
+    color:white;
+}
+.booked-seat{
+    background-color: grey;
+    color:white;
+    pointer-events: none !important;
+    cursor: disabled !important;
+
+}
+.disabled-btn{
+    background-color: grey !important;
+    color: white;
+    border: none !important;
+    padding: 10px 20px;
+    border-radius: 0;
+    cursor: not-allowed;
+}

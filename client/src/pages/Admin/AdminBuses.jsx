@@ -103,7 +103,7 @@ const deleteBus = (id) => {
 
   return (
     <div>
-      <div className="d-flex justify-between">
+      <div className="d-flex justify-between ">
         <PageTitle title={"buses"} />
         <button
           className="btn btn-primary"

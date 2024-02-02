@@ -13,6 +13,7 @@ function DefaultLayout({children}) {
   const userMenu = [
     { name: "Home", path: "/user/home", icon: "ri-home-line" },
     { name: "Bookings", path: "/user/Bookings", icon: "ri-file-list-line" },
+    { name : "Notification", path : "/user/Notification", icon: "ri-user-line" },
     { name : "Profile", path : "user/Profile", icon: "ri-user-line" },
     { name : "Logout", path : "/logout", icon: "ri-logout-box-line" }
   ]
@@ -21,6 +22,7 @@ function DefaultLayout({children}) {
     { name: "Bus", path: "/admin/buses", icon: "ri-bus-line" },
     { name: "Users", path: "/admin/users", icon: "ri-user-line" },
     { name : "Bus Booking", path : "admin/bookings", icon: "ri-file-list-line" },
+    { name : "Notification", path : "admin/bookings", icon: "ri-file-list-line" },
     { name : "Logout", path : "/logout", icon: "ri-logout-box-line" }
   ]
   const menuToBeRendered = user?.isAdmin ? adminMenu : userMenu;
